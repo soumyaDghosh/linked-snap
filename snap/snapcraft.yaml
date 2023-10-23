@@ -44,8 +44,4 @@ apps:
     environment:
       TMPDIR: $XDG_RUNTIME_DIR
     plugs:
-      - home
-      - unity7
       - shmem
-      - network-bind
-      - network
