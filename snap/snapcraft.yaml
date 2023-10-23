@@ -27,6 +27,7 @@ parts:
     plugin: dump
     source: https://github.com/lostdesign/linked/releases/download/v${SNAPCRAFT_PROJECT_VERSION}/linked_${SNAPCRAFT_PROJECT_VERSION}_amd64.deb
     prime:
+      - -opt/linked/LICENSE*
       - -opt/linked/chrome-sandbox
       - -opt/linked/chrome_crashpad_handler
       - -usr/share/doc
@@ -44,4 +45,5 @@ apps:
     environment:
       TMPDIR: $XDG_RUNTIME_DIR
     plugs:
+      - home
       - shmem
