@@ -40,6 +40,7 @@ apps:
   linked:
     command: launcher
     extensions: [ gnome ]
+    desktop: usr/share/applications/linked.desktop
     environment:
       TMPDIR: $XDG_RUNTIME_DIR
     plugs:
